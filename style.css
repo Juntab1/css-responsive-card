@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(27, 27, 27);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    width: 270px;
+    /*height: 400px; without this line when we input the .card p it lets it resize the card automatically*/
+    margin: 10px;
+    /* does not apply to the actual image so put for image too*/
+    border-radius: 15px;
+}
+
+.card-image {
+    height: 170px;
+    margin-bottom: 15px;
+    /*helps fit the image perfectly onto the image spot*/
+    background-size: cover;
+    /*top, left, bottom, bottom*/
+    border-radius: 15px 15px 0 0;
+}
+
+.car-1 {
+    background-image: url('download.jpg');
+}
+
+.car-2 {
+    background-image: url('download.jpg');
+}
+
+.car-3 {
+    background-image: url('download.jpg');
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card a {
+    background-color: black;
+    color: white;
+}
