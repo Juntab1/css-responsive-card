@@ -11,6 +11,7 @@ body {
 .container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -50,4 +51,19 @@ body {
 .card a {
     background-color: black;
     color: white;
+    padding: 15px 20px;
+    /*This makes the element block level meaning it starts on a new line and adds the boarder to the front and back*/
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+
+.card:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    /*This increases everthing on the card by 1.03x their normal size*/
+    transform: scale(1.03);
+    transition: all 1s ease;
 }
